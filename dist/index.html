@@ -1,0 +1,623 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html lang="fa" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="fa" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="fa" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html lang="fa" class="no-js"> <![endif]-->
+<html lang="fa" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Bootstrap rtl css -->
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
+	<!-- Bootstrap Icons -->
+	<link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+	<!-- AOS Library css-->
+	<link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
+	<!--Main Css File -->
+	<link rel="stylesheet" href="./css/main.css">
+	<title>Landing Page</title>
+</head>
+<body>
+
+
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+
+
+	<!-- ** ** Navbar ** **-->
+<header x-data = "{navShow : false} "
+				@scroll.window="navShow = window.scrollY > 100 ? true : false">
+	<nav class="header navbar navbar-expand-lg fixed-top" :class="{'header-scroll' : navShow}">
+		<div class="container">
+			<a class="navbar-brand" href="#">Sina Qasemi</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">صفحه اصلی</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							محصولات
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">سرویس اقتصادی</a></li>
+							<li class="my-2"><a class="dropdown-item" href="#">سرور های مجازی</a></li>
+							<li><a class="dropdown-item" href="#">سرویس ابری</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">درباره ما</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">تماس با ما</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+<!--** ** End Navbar ** ** -->
+
+
+
+<!--** ** Intro ** ** -->
+<section class="intro d-flex align-items-center overflow-hidden">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-6">
+				<h3 class="fw-bold text-primary text-center text-lg-start" data-aos="fade-up">
+					سینا سرور، خرید انواع دامنه، هاست و سرور
+				</h3>
+				<h5 class="text-muted mt-5" data-aos="fade-up" data-aos-delay="400">کسب و کار آنلاین خود را با سرویس های ما شروع کنید</h5>
+				<button class="btn btn-lg btn-primary mt-2 hover-grow" data-aos="fade-up" data-aos-delay="600">مشاهده بیشتر</button>
+			</div>
+			<div class="col-lg-6 mt-5 mt-lg-0">
+				<img class="img-fluid" src="../assets/img/intro-img.png" alt="" data-aos="zoom-out" data-aos-delay="400">
+			</div>
+		</div>
+	</div>
+</section>
+<!--** ** End Intro ** ** -->
+
+
+
+
+<!--** ** About Us ** ** -->
+<section class="py-5 overflow-hidden">
+	<div class="container">
+		<div class="row gx-0 gy-5 align-items-center ">
+			<!--Statement -->
+			<div class="col-lg-6" data-aos="fade-up">
+				<div class="content about-us">
+					<h3 class="text-primary">موفقیت فروشگاه آنلاین شما</h3>
+					<h2 class="fw-bold">سرویس میزبانی وب ووکامرس سونیک، با توجه به ۴ ارزش کلیدی هر فروشگاه آنلاین، ایجاد شده:</h2>
+					<p>
+						︎سرعت مناسب بارگذاری؛ موثر بر افزایش نرخ خریداران و بهبود SEO
+						امنیت؛ ارائه‌ی راهکارهای امنیتی حرفه‌ای، توسط تیم تخصصی امنیت و اطلاعات ایران‌سرور
+						︎پشتیبانی حرفه‌ای؛ شامل پشتیبانی ۲۴ساعته در ۷روز هفته، توسط تیم حرفه‌ای پشتیبانی ایران‌سرور
+						آپ‌تایم ۹۹.۹%؛ جلوگیری از قطعی سایت با رصد و پیگیری شبانه‌روزی تیم‌فنی
+					</p>
+					<button class="btn btn-primary mt-2 hover-grow">مشاهده بیشتر</button>
+				</div>
+			</div>
+			<!--Statement image -->
+			<div class="col-lg-6" data-aos="zoom-out" data-aos-delay="">
+				<img class="img-fluid about-img" src="../assets/img/undraw_team_up_re_84ok.svg" alt="about-us">
+			</div>
+		</div>
+	</div>
+</section>
+<!--** ** End About Us ** **-->
+
+
+<!--** ** Enumerate and Values ** ** -->
+<section class="py-5 overflow-hidden">
+	<div class="container">
+		<!--Enumerate title-->
+		<div class="row mb-5" data-aos="fade-up">
+			<div class="col-12 text-center">
+				<h2 class="fw-bold text-primary">ارزش گذاری های ما</h2>
+				<p>کیفیت یک کسب و کار را رضایتمندی مشتریان تعریف میکند</p>
+			</div>
+		</div>
+		<!--Enumerate Card boxes-->
+		<div class="row g-2 text-center">
+			<div class="col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="200">
+				<div class="card shadow rounded-4">
+					<img src="../assets/img/1.png" class="card-img-top values-image" alt="">
+					<div class="card-body">
+						<h5 class="card-title text-primary fw-bold">سرمایه گذاری بلند مدت</h5>
+						<p class="card-text">تعرفه های ما اقصتادی و منصافه است تا مشتریان با آسوده خاطر بیشتری به مدیریت کار خود بپردازند</p>
+						<a href="#" class="btn btn-outline-primary w-100 rounded-5">سرویس های اقتصادی</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+					<div class="card shadow rounded-4">
+						<img src="../assets/img/2.png" class="card-img-top values-image" alt="">
+						<div class="card-body">
+							<h5 class="card-title text-primary fw-bold">شتاب دهنده</h5>
+							<p class="card-text">هر زمان که بخواهید سرویس های شما منطبق بر نیاز کسب و کار شما تنظیم میشود</p>
+							<a href="#" class="btn btn-outline-primary w-100 rounded-5">سرویس اختصاصی</a>
+						</div>
+					</div>
+			</div>
+			<div class="col-md-6 col-lg-4" data-aos="fade-right" data-aos-delay="200">
+					<div class="card shadow rounded-4">
+						<img src="../assets/img/3.png" class="card-img-top values-image" alt="">
+						<div class="card-body">
+							<h5 class="card-title text-primary fw-bold">مدیریت و شخصی سازی</h5>
+							<p class="card-text">سرویس ها تماماً قابل شخصی سازی و دستکاری و مدیریت همه جانبه برای رصد بهتر کسب و کار</p>
+							<a href="#" class="btn btn-outline-primary w-100 rounded-5">صاحب کسب و کار</a>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--** ** End Enumerate ** **-->
+
+
+<!--** ** Counters ** ** -->
+<section class="counts py-5 overflow-hidden">
+	<div class="container">
+		<div class="row gy-3">
+			<div class="col-md-6 col-lg-3">
+				<div class="shadow p-3 d-flex align-items-center justify-content-center rounded-4">
+					<i class="bi bi-emoji-smile me-3 icon-blue"></i>
+					<div>
+						<span class="fw-bold text-primary fs-3" id="icon-blue">0</span>
+						<p>رضایتمندی</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3">
+				<div class="shadow p-3 d-flex align-items-center justify-content-center rounded-4">
+					<i class="bi bi-journal-richtext me-3 icon-orange"></i>
+					<div>
+						<span class="fw-bold text-primary fs-3" id="icon-orange">0</span>
+						<p>ثبت نام</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3">
+				<div class="shadow p-3 d-flex align-items-center justify-content-center rounded-4">
+					<i class="bi bi-headset me-3 icon-green"></i>
+					<div>
+						<span class="fw-bold text-primary fs-3" id="icon-green">0</span>
+						<p>پشتیبانی</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3">
+				<div class="shadow p-3 d-flex align-items-center justify-content-center rounded-4">
+					<i class="bi bi-people me-3 icon-red"></i>
+					<div>
+						<span class="fw-bold text-primary fs-3" id="icon-red">0</span>
+						<p>مدیران</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--** ** End Counters ** ** -->
+
+
+<!--** ** Features ** ** -->
+<section class="py-5 features overflow-hidden">
+	<div class="container">
+		<!--Features title-->
+		<div class="row text-center" data-aos="fade-up">
+			<h2 class="fw-bold mb-5 text-primary">قابلیت سرویس ها</h2>
+		</div>
+		<!--Features statement list -->
+
+		<div class="row align-items-center">
+			<div class="col-lg-4 my-4" data-aos="fade-up" data-aos-delay="200">
+				<img class="img-fluid" src="../assets/img/features.png" alt="platform-features">
+			</div>
+			<div class="col-lg-8">
+				<div class="row gy-3" data-aos="fade-up" data-aos-delay="400">
+					<!-- Directory -->
+					<div class="col-md-6">
+						<div class="d-flex">
+							<i class="bi bi-folder-fill me-3"></i>
+							<div>
+								<h5>دسته بندی دایرکتوری ها</h5>
+								<p class="text-muted">
+									الگوریتم دسته بندی فایل ها و دایرکتوری ها به صورت درختی و قابلیت تنظیم دستی
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Stack -->
+					<div class="col-md-6">
+						<div class="d-flex">
+							<i class="bi bi-stack me-3"></i>
+							<div>
+								<h5>طبقه بندی اطلاعات</h5>
+								<p class="text-muted">
+									اطلاعات مورد نظر شما بر اساس مورد اهمیت بودن و ارزش گذاری های اخیتاری طبقه بندی میشود
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--Eamil Service-->
+					<div class="col-md-6">
+						<div class="d-flex">
+							<i class="bi bi-envelope-fill me-3"></i>
+							<div>
+								<h5>سرویس ایمیل</h5>
+								<p class="text-muted">
+									تمامی سرویس ها شامل سرویس ایمیل با تمام موارد شخصی سازی است و تنظیمات پیشفرض قابل دستکاری مجدد است
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--Credit Card & price-->
+					<div class="col-md-6">
+						<div class="d-flex">
+							<i class="bi bi-credit-card-2-front-fill me-3"></i>
+							<div>
+								<h5>درگاه پرداخت</h5>
+								<p class="text-muted">
+									درگاه پرداخت تمامی بانک های مد نظر شما و پیاده سازی رهگیری تمام تراکنش ها
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Cloud Hosting-->
+					<div class="col-md-6">
+						<div class="d-flex">
+							<i class="bi bi-cloud-check-fill me-3"></i>
+							<div>
+								<h5>فضای ابری</h5>
+								<p class="text-muted">
+									میزبانی از تمام خدمات فضای ابری و مجازی سازی برای کسب و کار شما
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Programing & code-->
+					<div class="col-md-6">
+						<div class="d-flex">
+							<i class="bi bi-file-earmark-code-fill me-3"></i>
+							<div>
+								<h5>مهندسی و برنامه نویسی</h5>
+								<p class="text-muted">
+									با بهره گیری از تیمی شامل مهندسین و برنامه نویس های مجرب
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--** ** End Features ** ** -->
+
+
+<!--** ** Services ** ** -->
+<section class="services py-5 overflow-hidden">
+	<div class="container">
+		<div class="row text-center my-5" data-aos="fade-up" data-aos-delay="100">
+			<h2 class="fw-bold text-primary">سرویس منتخب شما</h2>
+			<p>بهترین سرویس های ممکن با انتخاب مشتریان عزیز</p>
+		</div>
+		<div class="row gy-3">
+			<div class="col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="200">
+				<div class="service-box service-blue-box">
+					<i class="bi bi-cloud-arrow-up-fill service-icon"></i>
+					<h3 class="fw-bold">هاست ابری</h3>
+					<p>مناسب با پلتفرم هایی که بازدید های روزانه زیادی دارند</p>
+					<a class="read-more mt-5" href="#">
+						<span class="text-muted see-more">مشاهده بیشتر</span>
+						<i class="bi bi-arrow-left text-muted"></i>
+					</a>
+				</div>
+
+			</div>
+			<div class="col-md-6 col-lg-4" data-aos="fade-down" data-aos-delay="200">
+				<div class="service-box service-green-box">
+				<i class="bi bi-download service-icon"></i>
+				<h3 class="fw-bold"> هاست دانلودی</h3>
+				<p>مناسب پلتفرم هایی که حجم دانلود روزانه بالایی دارند</p>
+				<a class="read-more mt-5" href="#">
+					<span class="text-muted see-more">مشاهده بیشتر</span>
+					<i class="bi bi-arrow-left"></i>
+				</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4" data-aos="fade-right" data-aos-delay="200">
+				<div class="service-box service-orange-box">
+					<i class="bi bi-ubuntu service-icon"></i>
+					<h3>هاست لینوکسی</h3>
+					<p>مناسب با تمامی پلتفرم دارای امنیت و سرعت بالا</p>
+					<a class="read-more mt-5" href="#">
+						<span class="text-muted see-more">مشاهده بیشتر</span>
+						<i class="bi bi-arrow-left"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--** ** End Services ** ** -->
+
+
+<!--** ** Plans ** **-->
+<section class="plans py-5 overflow-hidden">
+	<div class="container">
+		<div class="row text-center my-5" data-aos="fade-up" data-aos-delay="200">
+			<h2 class="fw-bold text-primary">قیمت پلن ها</h2>
+			<p>هاست مورد نظر خود را جهت مشاهده جزئیات انتخاب کنید</p>
+		</div>
+		<!--Certain Plans-->
+		<div class="row g-3">
+			<!--plane 1-->
+			<div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="400">
+				<div class="card plane-item rounded-4 text-center align-items-center justify-content-center card-expanded-plane">
+					<div class="card-body">
+						<h4 class="fw-bold" style="color: #07d5c0">Sonic 5</h4>
+						<!--plan price-->
+						<div>
+							599 <sup>تومان</sup> / در ماه
+						</div>
+						<!--plan image-->
+						<img src="../assets/img/price-1.png" class="img-fluid p-4" alt="price">
+						<!--plan assets-->
+						<ul class="mt-4">
+							<li class="mb-2"><i class="me-2 check-plan-1 bi bi-check-circle-fill"></i> 5 گیگابایت حجم </li>
+							<li class="mb-2"><i class="me-2 check-plan-1 bi bi-check-circle-fill"></i>5 گیگابایت رم</li>
+							<li class="mb-2"><i class="me-2 check-plan-1 bi bi-check-circle-fill"></i>پردازنده  5vCore(s)</li>
+							<li class="mb-2"><i class="me-2 check-plan-1 bi bi-check-circle-fill"></i> ماژول بهینه سازی</li>
+							<li class="mb-2"><i class="me-2 check-plan-1 bi bi-check-circle-fill"></i>گارانتی 14 روزه سرویس </li>
+							<li class="mb-2"><i class="me-2 check-plan-1 bi bi-check-circle-fill"></i> بکاپ گیری روزانه دیتابیس</li>
+						</ul>
+						<button class="btn bg-light text-primary rounded-4 px-5 py-3 mt-5  border-primary">ثبت سفارش</button>
+					</div>
+				</div>
+			</div>
+			<!--plane 2-->
+			<div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="600">
+				<div class="card plane-item rounded-4 text-center align-items-center justify-content-center card-expanded-plane">
+					<div class="card-body">
+						<h4 class="fw-bold" style="color: #7de50c">Sonic 10</h4>
+						<!--plan price-->
+						<div>
+							749 <sup>تومان</sup> / در ماه
+						</div>
+						<!--plan image-->
+						<img src="../assets/img/price-2.png" class="img-fluid p-4" alt="price">
+						<!--plan assets-->
+						<ul class="mt-4 ">
+							<li class="mb-2"><i class="me-2 check-plan-2 bi bi-check-circle-fill"></i> 10 گیگابایت حجم </li>
+							<li class="mb-2"><i class="me-2 check-plan-2 bi bi-check-circle-fill"></i>7 گیگابایت رم</li>
+							<li class="mb-2"><i class="me-2 check-plan-2 bi bi-check-circle-fill"></i>پردازنده  6vCore(s)</li>
+							<li class="mb-2"><i class="me-2 check-plan-2 bi bi-check-circle-fill"></i> ماژول بهینه سازی</li>
+							<li class="mb-2"><i class="me-2 check-plan-2 bi bi-check-circle-fill"></i>گارانتی 14 روزه سرویس </li>
+							<li class="mb-2"><i class="me-2 check-plan-2 bi bi-check-circle-fill"></i> بکاپ گیری روزانه دیتابیس</li>
+						</ul>
+						<button class="btn bg-light text-primary rounded-4 px-5 py-3 mt-5  border-primary">ثبت سفارش</button>
+					</div>
+				</div>
+			</div>
+			<!-- plane 3-->
+			<div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="800">
+				<div class="card plane-item rounded-4 text-center align-items-center justify-content-center card-expanded-plane">
+					<div class="card-body">
+						<h4 class="fw-bold" style="color: #ff901c">Sonic 30</h4>
+						<!--plan price-->
+						<div>
+							799 <sup>تومان</sup> / در ماه
+						</div>
+						<!--plan image-->
+						<img src="../assets/img/price-3.png" class="img-fluid p-4" alt="price">
+						<!--plan assets-->
+						<ul class="mt-4">
+							<li class="mb-2"><i class="me-2 check-plan-3 bi bi-check-circle-fill"></i> 30 گیگابایت حجم </li>
+							<li class="mb-2"><i class="me-2 check-plan-3 bi bi-check-circle-fill"></i>10 گیگابایت رم</li>
+							<li class="mb-2"><i class="me-2 check-plan-3 bi bi-check-circle-fill"></i>پردازنده  8vCore(s)</li>
+							<li class="mb-2"><i class="me-2 check-plan-3 bi bi-check-circle-fill"></i> ماژول بهینه سازی</li>
+							<li class="mb-2"><i class="me-2 check-plan-3 bi bi-check-circle-fill"></i>گارانتی 14 روزه سرویس </li>
+							<li class="mb-2"><i class="me-2 check-plan-3 bi bi-check-circle-fill"></i> بکاپ گیری روزانه دیتابیس</li>
+						</ul>
+						<button class="btn bg-light text-primary rounded-4 px-5 py-3 mt-5 border-primary">ثبت سفارش</button>
+					</div>
+				</div>
+			</div>
+			<!--plane 4-->
+			<div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="1000">
+				<div class="card plane-item rounded-4 text-center align-items-center justify-content-center card-expanded-plane">
+					<div class="card-body">
+						<h4 class="fw-bold" style="color: #ff0071">Sonic 50</h4>
+						<!--plan price-->
+						<div>
+							949 <sup>تومان</sup> / در ماه
+						</div>
+						<!--plan image-->
+						<img src="../assets/img/price-4.png" class="img-fluid p-4" alt="price">
+						<!--plan assets-->
+						<ul class="mt-4">
+							<li class="mb-2"><i class="me-2 check-plan-4 bi bi-check-circle-fill"></i> 5 گیگابایت حجم </li>
+							<li class="mb-2"><i class="me-2 check-plan-4 bi bi-check-circle-fill"></i>5 گیگابایت رم</li>
+							<li class="mb-2"><i class="me-2 check-plan-4 bi bi-check-circle-fill"></i>پردازنده  5vCore(s)</li>
+							<li class="mb-2"><i class="me-2 check-plan-4 bi bi-check-circle-fill"></i> ماژول بهینه سازی</li>
+							<li class="mb-2"><i class="me-2 check-plan-4 bi bi-check-circle-fill"></i>گارانتی 14 روزه سرویس </li>
+							<li class="mb-2"><i class="me-2 check-plan-4 bi bi-check-circle-fill"></i> بکاپ گیری روزانه دیتابیس</li>
+						</ul>
+						<button class="btn bg-light text-primary rounded-4 px-5 py-3 mt-5 border-primary">ثبت سفارش</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--** ** End plans ** **-->
+
+
+<!--** ** Contact Us ** ** -->
+<section class="contact py-5 overflow-hidden">
+	<div class="container">
+		<div class="row text-center" data-aos="fade-up" >
+			<h2 class="fw-bold text-primary my-5">با ما در ارتباط باشید</h2>
+		</div>
+		<div class="row gy-3">
+			<div class="col-lg-6">
+				<div class="row g-5">
+					<!--Address-->
+					<div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+						<div class="info-box bg-light rounded-4">
+							<i class="bi bi-geo-alt"></i>
+							<h5 class="fw-bold">دفتر مرکزی</h5>
+							<p class="text-muted">گلستان، گرگان</p>
+						</div>
+					</div>
+					<!--Phone-->
+					<div class="col-md-6" data-aos="fade-down" data-aos-delay="400">
+						<div class="info-box bg-light rounded-4">
+							<i class="bi bi-telephone"></i>
+							<h5 class="fw-bold">شماره تماس</h5>
+							<p class="text-muted">017-10001000</p>
+						</div>
+					</div>
+					<!--Email-->
+					<div class="col-md-6" data-aos="fade-right" data-aos-delay="600">
+						<div class="info-box bg-light rounded-4">
+							<i class="bi bi-envelope"></i>
+							<h5 class="fw-bold">ایمیل</h5>
+							<p class="text-muted">cenaqasemi@gmail.com</p>
+						</div>
+					</div>
+					<!--Support-->
+					<div class="col-md-6" data-aos="fade-up" data-aos-delay="800">
+						<div class="info-box bg-light rounded-4">
+							<i class="bi bi-clock"></i>
+							<h5 class="fw-bold">پاسخگویی</h5>
+							<p class="text-muted">16:00 - 08:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--User Contact box-->
+			<div class="col-lg-6" data-aos="zoom-in">
+				<form action="#" class="contact-form bg-light rounded-4">
+					<div class="row gy-4">
+						<!--User Name-->
+						<div class="col-md-6">
+							<label for="user-name" class="form-label">نام</label>
+							<input class="form-control" type="text" name="user-name" id="user-name">
+						</div>
+						<!--User Last Name-->
+						<div class="col-md-6">
+							<label for="user-email" class="form-label">ایمیل</label>
+							<input class="form-control" type="email" name="user-eamil" id="user-email">
+						</div>
+						<!--Subject -->
+						<div class="col-md-12">
+							<label for="user-subject" class="form-label">موضوع</label>
+							<input class="form-control" type="text" name="user-subject" id="user-subject">
+						</div>
+						<!--user input text-->
+						<div class="col-md-12">
+							<label for="user-text" class="form-label">متن پیام</label>
+							<textarea class="form-control" name="user-text" id="user-text" rows="3"></textarea>
+						</div>
+						<div class="col-md-12 text-center">
+							<button class="btn btn-outline-primary rounded-4 px-5 py-2">ارسال پیام</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<!--** ** End Contact Us ** **-->
+
+
+
+<!--** ** Footer ** ** -->
+<footer class="footer overflow-hidden">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5">
+				<h3 class="fw-bold">Sina Qasemi</h3>
+				<p>هدف ما، تبدیل میزبانی وب به یک تجربه لذتبخش برای شما است. به صورت ۲۴ ساعته و در تمامی لحظات، توان و تلاشمان را در جهت حفاظت از دارایی آنلاینتان بکار می گیریم تا خیال شما همواره آسوده باشد.</p>
+				<div class="social-link">
+					<a href="#"><i class="bi bi-telegram"></i></a>
+					<a class="mx-3" href="#"><i class="bi bi-github"></i></a>
+					<a href="#"><i class="bi bi-discord"></i></a>
+					<a class="mx-3" href="#"><i class="bi bi-mastodon"></i></a>
+				</div>
+			</div>
+
+			<div class="col-lg-2 align-items-start justify-content-start offset-lg-1 col-6">
+				<h5>ثبت دامنه</h5>
+				<hr class="bg-primary">
+				<ul class="footer-link p-1">
+					<li class="my-2"><i class="bi bi-chevron-left"></i>ثبت دامین</li>
+					<li class="my-2"><i class="bi bi-chevron-left"></i>ثبت دامین عمومی</li>
+					<li class="my-2"><i class="bi bi-chevron-left"></i>ثبت دامنه ایرانی</li>
+					<li class="my-2"><i class="bi bi-chevron-left"></i>ثبت دامنه فارسی</li>
+					<li class="my-2"><i class="bi bi-chevron-left"></i>رزرو دامنه</li>
+				</ul>
+			</div>
+
+
+			<div class="col-lg-2 align-items-start justify-content-start col-6">
+				<h5>سرور اختصاصی </h5>
+				<hr class="bg-primary">
+				<ul class="footer-link p-1">
+					<li class="my-2"><i class="bi bi-chevron-left"></i>سرور اختصاصی ایران</li>
+					<li class="my-2"><i class="bi bi-chevron-left"></i>سرور اختصاصی آلمان</li>
+					<li class="my-2"><i class="bi bi-chevron-left"></i>سرور اختصاصی فرانسه</li>
+					<li class="my-2"><i class="bi bi-chevron-left"></i>مدیریت سرور اختصاصی</li>
+					<li class="my-2"><i class="bi bi-chevron-left"></i>معرفی دیتاسنتر</li>
+				</ul>
+			</div>
+
+
+			<div class="col-lg-2 align-items-start justify-content-start">
+				<h5>خدمات بیشتر</h5>
+				<hr class="bg-primary">
+				<ul class="footer-link p-1">
+					<li class="my-2"><i class="bi bi-chevron-left"></i>سایت ساز</li>
+					<li class="my-2"><i class="bi bi-chevron-left"></i>خرید SSL</li>
+					<li class="my-2"><i class="bi bi-chevron-left"></i>همکاری در فروش</li>
+					<li class="my-2"><i class="bi bi-chevron-left"></i>انتقال سایت</li>
+					<li class="my-2"><i class="bi bi-chevron-left"></i>اجاره IP</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid text-center py-4" style="background-color:#f6f9ff;">
+		<h5 class="fw-bold">سینا قاسمی</h5>
+		<p>شایسته پرستش و ستایش اهورامزدا</p>
+	</div>
+</footer>
+<!--** ** End Footer ** **-->
+
+
+
+<!-- Js Libraries -->
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<!--Alpine Js -->
+<script src="../node_modules/alpinejs/dist/cdn.min.js"></script>
+<!-- CounterUp JS -->
+<script src="../node_modules/countup.js/dist/countUp.min.js"></script>
+<!-- AOS Library JS File -->
+<script src="../node_modules/aos/dist/aos.js"></script>
+<!-- Main JS File -->
+<script src="../dist/js/app.js" type="module"></script>
+</body>
+</html>

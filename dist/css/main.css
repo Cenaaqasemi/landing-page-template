@@ -1,0 +1,229 @@
+@import url('../../assets/styles/_reset.css');
+@import url('../../assets/styles/_font-family.css');
+body {
+    font-family: "vazir", sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+.header {
+    transition: all 0.5s;
+    padding: 20px 0;
+}
+.header-scroll {
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgba(1 41 112 / 10%);
+}
+@media screen and (max-width: 992px){
+    .header {
+        background-color: #fff;
+    }
+}
+/*
+* Intro Section
+*/
+.intro{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/img/intro-bg.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*
+* * About Us
+*/
+.content {
+    background-color: #f6f9ff;
+    padding: 40px;
+}
+.about-us{
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+
+/*
+* * Values
+*/
+.values-image {
+    width: 322px;
+    height: 276px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+
+/*
+* Counters
+*/
+.counts i {
+    font-size: 42px;
+}
+.icon-blue {
+    color: #4154f1;
+}
+.icon-orange {
+    color: #ee6c20;
+}
+.icon-green {
+    color: #15be56;
+}
+.icon-red {
+    color: #bb0852;
+}
+
+
+/*
+* Features
+*/
+.features i {
+    font-size: 44px;
+    color: #4154f1;
+}
+
+
+/*
+*
+*/
+.service-box {
+    box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+    padding: 60px 30px;
+    text-align: center;
+    border-radius: 16px;
+}
+.service-box .service-icon {
+    font-size: 44px;
+}
+.services .service-box .read-more i {
+    font-size: 18px;
+    line-height: 0;
+    margin-right: 0.4rem;
+}
+.services .service-box .read-more {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+/*blue service cloud host*/
+.service-blue-box {
+    border-bottom: 4px solid #4154f1;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.service-blue-box:hover {
+    background-color: #4154f1 ;
+}
+.service-blue-box:hover h3,
+.service-blue-box:hover p,
+.service-blue-box:hover i,
+.service-blue-box:hover .read-more span{
+    color: #fff !important;
+}
+/*green service download host*/
+
+.service-green-box {
+    border-bottom: 4px solid #00b51a;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.service-green-box:hover {
+    background-color: #00b51a ;
+}
+.service-green-box:hover h3,
+.service-green-box:hover p,
+.service-green-box:hover i,
+.service-green-box:hover .read-more span{
+    color: #fff !important;
+}
+
+/*Orange services Linux host*/
+
+.service-orange-box {
+    border-bottom: 4px solid #f9812a;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.service-orange-box:hover {
+    background-color: #f9812a ;
+}
+.service-orange-box:hover h3,
+.service-orange-box:hover p,
+.service-orange-box:hover i,
+.service-orange-box:hover .read-more span{
+    color: #fff !important;
+}
+
+/*
+* * Planes
+*/
+
+.plane-item {
+    box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+}
+.check-plan-1 {
+    line-height: 0;
+    color: #07d5c0;
+}
+.check-plan-2 {
+    line-height: 0;
+    color: #7de50c;
+}
+.check-plan-3 {
+    line-height: 0;
+    color: #ff901c;
+}
+.check-plan-4 {
+    line-height: 0;
+    color: #ff0071;
+}
+.card-expanded-plane {
+    transition: 0.4s;
+}
+.card-expanded-plane:hover {
+    transform: scale(1.035);
+}
+
+
+/* Contact */
+.info-box {
+    border: 1px solid #0d6efd;
+    padding: 30px;
+}
+.info-box i {
+    font-size: 38px;
+    line-height: 0;
+    color: #0d6efd;
+}
+.contact .contact-form {
+    border: 1px solid #0d6efd;
+    padding: 30px;
+    height: 100%;
+}
+
+
+
+/*   footer   */
+
+.footer .social-link i{
+    font-size: 20px;
+    color: rgba(1, 41, 121, 0.5);
+}
+.footer hr {
+    width: 70%;
+    height: 5px;
+}
+/*
+* Utilities
+*/
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p{
+    line-height: 1.8 !important;
+}
+.hover-grow {
+    transition: all 0.5s;
+}
+.hover-grow:hover {
+    transform: scale(1.1);
+}
